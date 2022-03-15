@@ -1,0 +1,20 @@
+<?php
+$cc_dataAdmin = $this->getCcDataAdmin();
+?>
+	<div>
+		<table style="width:100%; max-width:400px; padding:5px; font-size: 11px; color: #374953; margin:0 auto;">
+			<tbody>
+				<tr>
+					<td style="font-size: 1em; border-top: 0px; border-left: 0px; border-right: 0px; border-bottom: 1px solid #45829F; padding:3px; height:25px; line-height:25px" colspan="3"><div align="center"><?php echo __('euPago - Pagamento por Cartão de crédito') ?></div></td>
+				</tr>
+				<tr style="background-color:#f1f1f1;">
+					<td style=" padding:2px; font-weight:bold; text-align:left"><?php echo __('Referência: ') ?></td>
+					<td style=" padding:2px; text-align:left"><?php echo chunk_split($cc_dataAdmin->referencia,3,' '); ?></td>
+				</tr>
+				<tr style="background-color:#f1f1f1;">
+					<td style="padding:2px; padding-bottom:10px; font-weight:bold; text-align:left"><?php echo __('Valor: ') ?></td>
+					<td style="padding:2px; padding-bottom:10px; text-align:left"><?php echo number_format($cc_dataAdmin->valor,2).' EUR'; ?></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>

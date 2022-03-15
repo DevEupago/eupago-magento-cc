@@ -1,0 +1,10 @@
+<div id="payment_info_<?php echo $this->getMethodCode() ?>">
+    <div>
+	<h4>euPago - Cartão de crédito</h4>
+	<?php //$cc_data = $this->getCcData(); 
+	if ($cc_data) { ?>
+	<?php //echo __('Referência: ').chunk_split($cc_data->referencia,3," ")."</br>"  ?>
+	<?php //echo __('Valor: ').number_format($cc_data->valor,2)." EUR" ?>
+	<?php } ?>
+    </div>
+</div>
