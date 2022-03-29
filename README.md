@@ -21,3 +21,4 @@ Install using File Upload:
 
 4) Enable and configure Eupago Multibanco in your Backoffice Magento 2 under "Stores/Configuration/Payment Methods/Eupago Cc"
 
+5) url callback should be: http<area>://your-store.com/Eupago/callback/Cc
