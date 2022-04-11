@@ -40,7 +40,7 @@ class Success extends \Magento\Framework\View\Element\Template
 		
         $this->processErrors("Erro ao gerar getCcData: ", print_r($info, true));   
 
-        if($info['method_title'] == "Multibanco")
+        if($info['method_title'] != "Cartão de crédito")
             return null;
        
        
